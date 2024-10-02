@@ -1,6 +1,8 @@
 
 import './App.css'
 import Header from './components/Header'
+import Container from './components/Header/Container'
+import Sidebar from './components/Sidebar'
 
 function App() {
 
@@ -8,9 +10,13 @@ function App() {
   return (
     <>
       <Header/>
-      <div className='dark:bg-zinc-800 text-white'>
-          <h1>oie</h1>
-      </div>
+      <Container>
+        <div className='flex flex-col md:flex-row gap-2 xl:gap-4 h-full relative'>
+          <Sidebar/>
+        </div>
+          
+          <h1>fala mais</h1>
+      </Container>
     </>
   )
 }
